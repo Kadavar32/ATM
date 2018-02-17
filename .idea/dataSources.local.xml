@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="dataSourceStorageLocal">
+    <data-source name="Rails ATM: production" uuid="9b223c4c-ba80-412e-8a05-9d34d49acdf3">
+      <database-info product="" version="" jdbc-version="" driver-name="" driver-version="" />
+      <user-name>ATM</user-name>
+    </data-source>
+    <data-source name="Rails ATM: test" uuid="89d63c3b-e8c6-4585-8b49-0b65d9867c4f">
+      <database-info product="" version="" jdbc-version="" driver-name="" driver-version="" />
+    </data-source>
+    <data-source name="Rails ATM: development" uuid="909d9496-5b1f-405b-80a6-a53ebf4e14cf">
+      <database-info product="" version="" jdbc-version="" driver-name="" driver-version="" />
+      <first-sync>true</first-sync>
+    </data-source>
+  </component>
+</project>

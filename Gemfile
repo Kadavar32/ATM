@@ -32,6 +32,10 @@ gem 'jbuilder', '~> 2.5'
 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
+gem 'grape'
+gem 'grape-active_model_serializers'
+gem 'grape-swagger-rails'
+gem 'grape-swagger'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
@@ -39,6 +43,9 @@ group :development, :test do
   # Adds support for Capybara system testing and selenium driver
   gem 'capybara', '~> 2.13'
   gem 'selenium-webdriver'
+  gem 'rspec-grape'
+  gem 'rspec-rails', '~> 3.7'
+  gem 'factory_bot_rails'
 end
 
 group :development do

@@ -1,0 +1,3 @@
+class ServiceError < RuntimeError
+
+end

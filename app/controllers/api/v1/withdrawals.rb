@@ -10,7 +10,7 @@ module API
 
         desc 'Get Cash from ATM'
         params do
-          requires :amount, type: Integer, desc: 'Amount of money'
+          requires :amount, coerce: Float, desc: 'Amount of money, Must be an Integer and > 0'
         end
 
         post '', root: :withdrawals do

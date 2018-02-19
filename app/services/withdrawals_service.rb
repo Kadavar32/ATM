@@ -5,8 +5,7 @@ class WithdrawalsService
   def create(amount)
     with_optimistic_lock do
       Bill.transaction do
-        amount = amount.to_i
-        raise ServiceError, INVALID_AMOUNT_ERROR if amount <= 0
+        raise ServiceError, INVALID_AMOUNT_ERROR if amount <= 0 || !is_int?(amount)
         bills = load_bills
         total_balance = total_balance(bills: bills)
         raise ServiceError, LOW_BALANCE_ERROR if amount > total_balance
@@ -53,5 +52,9 @@ class WithdrawalsService
     end
 
     result
+  end
+
+  def is_int?(value)
+    value.to_i == value
   end
 end
